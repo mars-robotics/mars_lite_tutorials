@@ -21,6 +21,7 @@ sudo apt-get install ros-kinetic-turtlebot-gazebo ros-kinetic-turtlebot-rviz-lau
 ```bash
 roslaunch turtlebot_gazebo turtlebot_world.launch
 roslaunch turtlebot_teleop keyboard_teleop.launch
+roslaunch husky_gazebo husky_empty_world.launch
 roslaunch husky_gazebo husky_playpen.launch
 rosrun turtlebot_teleop turtlebot_teleop_key turtlebot_teleop/cmd_vel:=/cmd_vel
 ```
