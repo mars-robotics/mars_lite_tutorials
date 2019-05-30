@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+   <node pkg="XXXX" type="XXXX" name="XXXX" output="screen">
+      <param name="XXXX"  value="XXX"/>
+      <param name="XXXX"  value="XXX"/>
+   </node>
+</launch>
+
