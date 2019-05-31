@@ -38,4 +38,10 @@ cd ..
 ```bash
 catkin_make
 ```
+### Step 4 Real Robot Mars-lite 使用鍵盤遙控 Mars-lite
+```bash
+roslaunch mars_lite_bringup mars_lite_bringup.launch
+rosrun turtlebot_teleop turtlebot_teleop_key turtlebot_teleop/cmd_vel:=/mob_plat/cmd_vel
+```
+
 
