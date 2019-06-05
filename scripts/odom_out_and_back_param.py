@@ -18,7 +18,7 @@ class OutAndBack():
         rospy.on_shutdown(self.shutdown)
         # Create a publisher which can "talk" to Robot and tell it to move
         # Tip: You may need to change /cmd_vel
-        self.cmd_vel = rospy.Publisher('cmd_vel', Twist, queue_size=10)
+        self.cmd_vel = rospy.Publisher('/mob_plat/cmd_vel', Twist, queue_size=10)
 #       self.cmd_vel = rospy.Publisher('cmd_vel_mux/input/navi', Twist, queue_size=10)
 
         # How fast will we update the robot's movement?
@@ -39,7 +39,7 @@ class OutAndBack():
 
 
         # Set the rotation speed in radians per second
-        angular_speed = rospy.get_param("~angular_speed", 0.5)      # radians per second
+        angular_speed = rospy.get_param("~angular_speed", 0.3)      # radians per second
         print("設定 旋轉角度為%5.2f radians，旋轉速度為%5.2f rad/s" % (goal_angle,angular_speed))
 
         # Set the angular tolerance in degrees converted to radians

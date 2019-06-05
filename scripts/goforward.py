@@ -15,7 +15,7 @@ class GoForward():
         rospy.on_shutdown(self.shutdown)
         # Create a publisher which can "talk" to Robot and tell it to move
         # Tip: You may need to change /cmd_vel
-        self.cmd_vel = rospy.Publisher('cmd_vel', Twist, queue_size=10)
+        self.cmd_vel = rospy.Publisher('/mob_plat/cmd_vel', Twist, queue_size=10)
 #       self.cmd_vel = rospy.Publisher('cmd_vel_mux/input/navi', Twist, queue_size=10)
 
         # How fast will we update the robot's movement?
